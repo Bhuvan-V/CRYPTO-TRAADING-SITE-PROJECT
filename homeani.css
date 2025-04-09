@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, black,black, 70%,black);
+    overflow: hidden;
+  }
+  
+  .stars {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    background: gold;
+    box-shadow: 2vw 5vh 2px gold, 10vw 8vh 2px gold, 15vw 15vh 1px gold,
+      22vw 22vh 1px gold, 28vw 12vh 2px gold, 32vw 32vh 1px gold,
+      38vw 18vh 2px gold, 42vw 35vh 1px gold, 48vw 25vh 2px gold,
+      53vw 42vh 1px gold, 58vw 15vh 2px gold, 63vw 38vh 1px gold,
+      68vw 28vh 2px gold, 73vw 45vh 1px gold, 78vw 32vh 2px gold,
+      83vw 48vh 1px gold, 88vw 20vh 2px gold, 93vw 52vh 1px gold,
+      98vw 35vh 2px gold, 5vw 60vh 1px gold, 12vw 65vh 2px gold,
+      18vw 72vh 1px gold, 25vw 78vh 2px gold, 30vw 85vh 1px gold,
+      35vw 68vh 2px gold, 40vw 82vh 1px gold, 45vw 92vh 2px gold,
+      50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
+      65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+      80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+      95vw 75vh 2px white;
+    animation: twinkle 8s infinite linear;
+  }
+  
+  .shooting-star {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, white, transparent);
+    animation: shoot 3s infinite ease-in;
+  }
+  
+  .shooting-star:nth-child(1) {
+    top: 20%;
+    left: -100px;
+    animation-delay: 0s;
+  }
+  
+  .shooting-star:nth-child(2) {
+    top: 35%;
+    left: -100px;
+    animation-delay: 1s;
+  }
+  
+  .shooting-star:nth-child(3) {
+    top: 50%;
+    left: -100px;
+    animation-delay: 2s;
+  }
+  
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+  
+  @keyframes shoot {
+    0% {
+      transform: translateX(0) translateY(0) rotate(25deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(120vw) translateY(50vh) rotate(25deg);
+      opacity: 0;
+    }
+  }
+  .stars::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: gold;
+    box-shadow: 8vw 12vh 2px gold, 16vw 18vh 1px gold, 24vw 25vh 2px gold,
+      33vw 15vh 1px gold, 41vw 28vh 2px gold, 49vw 35vh 1px gold,
+      57vw 22vh 2px gold, 65vw 42vh 1px gold, 73vw 28vh 2px gold,
+      81vw 48vh 1px gold, 89vw 32vh 2px gold, 97vw 45vh 1px gold,
+      3vw 68vh 2px gold, 11vw 75vh 1px gold, 19vw 82vh 2px gold,
+      27vw 88vh 1px gold, 35vw 72vh 2px gold, 43vw 85vh 1px gold,
+      51vw 92vh 2px gold, 59vw 78vh 1px gold;
+    animation: twinkle 6s infinite linear reverse;
+  }

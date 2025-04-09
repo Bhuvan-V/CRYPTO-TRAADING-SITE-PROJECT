@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    z-index:3
+}
+.logo{
+    font-size: 3rem;
+    color: gold;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav a{
+
+    font-size: 25;
+    color: white;
+    transition: 0.3s ease;
+    margin-right:30px ;
+}
+nav a:hover,
+nav a.active{
+    color: gold;
+    border-bottom:3px solid goldenrod;
+}
+.content{
+    position: relative;
+    text-align: center;
+    top : 120px;
+    z-index:1;
+}
+.para1{
+    padding : 50px;
+    margin-left: 54%;
+    position: relative;
+    right:50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 10px solid goldenrod;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+.para1:hover{
+    transform:scale(1.1);
+}
+.para2{
+    padding:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left:50%;
+    margin-right:54%;
+    border: 10px solid goldenrod;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+.para2:hover{
+    transform: scale(1.1);
+}
+.para3{
+    padding:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    position: relative;
+    right:50%;
+    margin-left: 54%;
+    border: 10px solid goldenrod;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+.para3:hover{
+    transform:scale(1.1);
+}
+.para4{
+    padding:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    margin-right: 54%;
+    border: 10px solid goldenrod;
+    border-radius: 50px;
+    transition:0.5s ease;
+}
+.para4:hover{
+    transform:scale(1.1);
+}
+.para5{
+    padding:40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    right: 50%;
+    margin-left: 54%;
+    margin-right:10px;
+    top:30%;
+    bottom: 10px;
+    border: 10px solid goldenrod;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+.para5:hover{
+    transform:scale(1.1);
+}
+.heading1{
+    padding: 20px;
+    color: gold;
+}
+.heading2{
+    padding: 20px;
+    color:gold;
+}
+.heading3{
+    padding: 20px;
+    color:gold;
+}
+.heading4{
+    padding: 20px;
+    color:gold;
+}
+.heading5{
+    padding: 20px;
+    color:gold;
+}
+.logbtn{
+    background-color: black;
+    border-radius: 50px;
+    font-size: 25;
+    border:2px solid gold;
+    padding:9px;
+}
+.logbtn:hover{
+    color:black;
+    background-color: goldenrod;
+}

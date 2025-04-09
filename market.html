@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptofy - Market</title>
+    <link rel="stylesheet" href="market.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">CRYPTOFY</a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="coins.html">Coins</a>
+            <a href="market.html" class="active">Market</a>
+            <a href="charts.html">Charts</a>
+            <a href="wallet.html">Wallet</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html" class="logbtn">Log In</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="cryptotitle">CRYPTO MARKET</h2>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" data-coin="BTC">
+            <img src="bitcoin.png" alt="Bitcoin" class="coinimg">
+            <h1 class="coinhead">BTC</h1>
+            <p class="price">$50,000 | ₹4,150,000</p>
+            <p class="buy"><button class="add-to-cart">Add to Cart</button></p>
+        </div>
+        
+        <div class="card" data-coin="ETH">
+            <img src="etherium.png" alt="Ethereum" class="coinimg">
+            <h1 class="coinhead">ETH</h1>
+            <p class="price">$3,000 | ₹249,000</p>
+            <p class="buy"><button class="add-to-cart">Add to Cart</button></p>
+        </div>
+        
+        <div class="card" data-coin="BNB">
+            <img src="bnb.png" alt="Binance Coin" class="coinimg">
+            <h1 class="coinhead">BNB</h1>
+            <p class="price">$400 | ₹33,200</p>
+            <p class="buy"><button class="add-to-cart">Add to Cart</button></p>
+        </div>
+        
+        <div class="card" data-coin="XRP">
+            <img src="xrp.png" alt="Ripple" class="coinimg">
+            <h1 class="coinhead">XRP</h1>
+            <p class="price">$0.50 | ₹41.50</p>
+            <p class="buy"><button class="add-to-cart">Add to Cart</button></p>
+        </div>
+        
+        <div class="card" data-coin="USDT">
+            <img src="tether.png" alt="Tether" class="coinimg">
+            <h1 class="coinhead">TETHER</h1>
+            <p class="price">$1.00 | ₹83.00</p>
+            <p class="buy"><button class="add-to-cart">Add to Cart</button></p>
+        </div>
+        
+        <div class="card" data-coin="SOL">
+            <img src="solana.png" alt="Solana" class="coinimg">
+            <h1 class="coinhead">SOL</h1>
+            <p class="price">$100 | ₹8,300</p>
+            <p class="buy"><button class="add-to-cart">Add to Cart</button></p>
+        </div>
+    </div>
+
+    <button class="animated-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+        </svg>
+        <span class="text">CART</span>
+        <span class="circle"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+        </svg>
+    </button>
+
+    <script src="market.js"></script>
+</body>
+</html>

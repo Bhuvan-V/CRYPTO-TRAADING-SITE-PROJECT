@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+header{
+    margin-top:0px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 3rem;
+    color: gold;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav a{
+
+    font-size: 25;
+    color: white;
+    transition: 0.3s ease;
+    margin-right:30px ;
+}
+nav a:hover,
+nav a.active{
+    color: gold;
+    border-bottom:3px solid goldenrod;
+}
+.home-img img{
+    padding-top: 10%;
+    position: relative;
+    left:10%;
+    width: 36vw;
+}
+.home-content{
+    padding-left: 60%;
+    position: relative;
+    bottom:70%;
+}
+span{
+    color:gold
+}
+.home-content h1{
+    padding-bottom:10px;
+    font-size: 50px;
+}
+.home-content h3{
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.home-content p{
+    padding-bottom: 10px;
+    font-size:20px;
+}
+.icons a{
+    width: 4rem;
+    height:4rem;
+    color:white;
+    background-color: transparent;
+    border:0.2rem solid goldenrod;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition:0.3s ease;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons a:hover{
+    color: black;
+    background-color: goldenrod;
+}
+.btn{
+    background-color: black;
+    border-radius: 50px;
+    font-size: 25px;
+    color: goldenrod;
+    font-weight: 500;
+    border: 2px solid goldenrod;
+    transition: 0.3s ease;
+    cursor: pointer;
+    padding:16px;
+}
+.btn:hover{
+    color:black;
+    background-color: goldenrod;
+}
+.logbtn{
+    background-color: black;
+    border-radius: 50px;
+    font-size: 25;
+    border:2px solid gold;
+    padding:9px;
+    transition: 0.3s ease;
+}
+.logbtn:hover{
+    color:black;
+    background-color: goldenrod;
+}

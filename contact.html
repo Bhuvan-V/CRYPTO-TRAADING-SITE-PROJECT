@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Cryptofy-Contact</title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel = "stylesheet" href = "constyle.css">
+        <link rel = "stylesheet" href="#">
+     </head>
+<body>
+    
+     <header>
+        <a href="home.html" class="logo">CRYPTOFY</a>
+         <nav>
+            <a href = "home.html">Home</a>
+            <a href = "coins.html">Coins</a>
+            <a href = "market.html">Market</a>
+            <a href = "charts.html">Charts</a>
+            <a href = "wallet.html">Wallet</a>
+            <a href = "about.html" class="active">About Us</a>
+            <a href="login.html" class="logbtn">Log In</a>
+        </nav>
+    </header>
+
+    <canvas id="backgroundCanvas"></canvas>
+
+<script>
+  const canvas = document.getElementById('backgroundCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Set canvas to full window size
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  // Create particles
+  const particles = [];
+  const particleCount = 200;
+
+  for (let i = 0; i < particleCount; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 3 + 1,
+      speedX: Math.random() * 1 - 0.25,
+      speedY: Math.random() * 1 - 0.25
+    });
+  }
+
+  // Animation loop
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Update and draw particles
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      
+      // Update position
+      p.x += p.speedX;
+      p.y += p.speedY;
+      
+      // Wrap around screen
+      if (p.x < 0) p.x = canvas.width;
+      if (p.x > canvas.width) p.x = 0;
+      if (p.y < 0) p.y = canvas.height;
+      if (p.y > canvas.height) p.y = 0;
+      
+      // Draw particle
+      ctx.fillStyle = "gold";
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    
+    requestAnimationFrame(animate);
+  }
+  
+  animate();
+</script>
+
+
+    <h1 class="heading">OUR TEAM</h1>
+    <section class="team">
+        <div class="team-member">
+            <img src="aditya.jpg" alt="Aditya S V">
+            <h2>Aditya S V</h2>
+            <p>Contact: <br><a href="adithyacholan26@gmail.com" class="mail">adithyacholan26@gmail.com</a></p>
+        </div>
+
+        <div class="team-member">
+            <img src="avesh.png" alt="Avesh Ansari S">
+            <h2>Avesh Ansari S</h2>
+            <p>Contact: <br><a href="btwitsavesh@gmail.com" class="mail">btwitsavesh@gmail.com</a></p>
+        </div>
+
+        <div class="team-member">
+            <img src="Bhuvan Vikram.jpg" alt="Bhuvan Vikram S B">
+            <h2>Bhuvan Vikram S B</h2>
+            <p>Contact: <br><a href="bhuvanvikramsb@gmail.com" class="mail">bhuvanvikramsb@gmail.com</a></p>
+        </div>
+
+        <div class="team-member">
+            <img src="karthikeyan.png" alt="Karthikeyan S">
+            <h2>Karthikeyan S</h2>
+            <p>Contact: <a href="karthikeyansakthiramalingam@gmail.com" class="mail">karthikeyansakthiramalingam@gmail.com</a></p>
+        </div>
+
+        <div class="team-member">
+            <img src="rathish.jpg" alt="Rathish P P">
+            <h2>Rathish P P</h2>
+            <p>Contact: <a href="rathishperiyasamy2007@gmail.com" class="mail">rathishperiyasamy2007@gmail.com</a></p>
+        </div>
+    </section>
+
+    <div class="main">
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <label for="email">Email:</label>
+                <div class="form-group"> 
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <label for="subject">Subject:</label>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <label for="message">Message:</label>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>    
+    
+</body>
+</html>

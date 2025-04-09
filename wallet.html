@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Cryptofy-Wallet</title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel = "stylesheet" href = "walletstyle.css">
+        <link rel = "stylesheet" href="#">
+     </head>
+<body>
+    <div class="context">
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+     <header>
+        <a href="home.html" class="logo">CRYPTOFY</a>
+         <nav>
+            <a href = "home.html">Home</a>
+            <a href = "coins.html">Coins</a>
+            <a href = "market.html">Market</a>
+            <a href = "charts.html">Charts</a>
+            <a href = "wallet.html" class="active">Wallet</a>
+            <a href = "about.html">About Us</a>
+            <a href="login.html" class="logbtn">Log In</a>
+        </nav>
+    </header>
+    <section class="wallet-contents">
+    <main class="wallet-container">
+        <h1>Wallet Balance</h1>
+        <p class="wallet-balance">Balance: <span id="balance">0.00 BTC</span></p>
+        
+        <div class="wallet-actions">
+            <button class="btn" onclick="deposit()">Deposit</button>
+            <button class="btn" onclick="withdraw()">Withdraw</button>
+            <button class="btn" onclick="send()">Send</button>
+        </div>
+
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul id="transactions"></ul>
+        </div>
+    </main>
+    <script src="wallet.js"></script>
+    </section>
+</body>
+</html>
